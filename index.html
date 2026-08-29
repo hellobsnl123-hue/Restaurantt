@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven | Premium Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Aesthetic Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Gourmet Haven</div>
+        <ul class="nav-links">
+            <li class="active" onclick="showSection('home')">Home</li>
+            <li onclick="showSection('starter')">Starters</li>
+            <li onclick="showSection('main')">Main Course</li>
+            <li onclick="showSection('dessert')">Desserts</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main id="content-container">
+        
+        <!-- HOME SECTION -->
+        <section id="home" class="page-section active-section">
+            <div class="hero-text">
+                <h1>Taste the Elegance</h1>
+                <p>Experience culinary artistry in every bite.</p>
+                <button class="cta-btn" onclick="showSection('starter')">View Menu</button>
+            </div>
+        </section>
+
+        <!-- STARTER SECTION -->
+        <section id="starter" class="page-section">
+            <h2 class="section-title">Exquisite Starters</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=500" alt="Bruschetta">
+                    <h3>Truffle Bruschetta</h3>
+                    <p>Toasted sourdough, wild mushrooms, truffle oil.</p>
+                    <span class="price">$12</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500" alt="Calamari">
+                    <h3>Crispy Calamari</h3>
+                    <p>Golden fried squid rings with spicy aioli.</p>
+                    <span class="price">$15</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=500" alt="Soup">
+                    <h3>Lobster Bisque</h3>
+                    <p>Creamy lobster soup with herbs.</p>
+                    <span class="price">$18</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN COURSE SECTION -->
+        <section id="main" class="page-section">
+            <h2 class="section-title">Signature Mains</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=500" alt="Steak">
+                    <h3>Ribeye Steak</h3>
+                    <p>Grilled to perfection with rosemary butter.</p>
+                    <span class="price">$35</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=500" alt="Pasta">
+                    <h3>Seafood Pasta</h3>
+                    <p>Fresh prawns and mussels in white wine sauce.</p>
+                    <span class="price">$28</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500" alt="Salmon">
+                    <h3>Pan-Seared Salmon</h3>
+                    <p>With asparagus and lemon dill sauce.</p>
+                    <span class="price">$30</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESSERT SECTION -->
+        <section id="dessert" class="page-section">
+            <h2 class="section-title">Sweet Endings</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?w=500" alt="Cake">
+                    <h3>Dark Chocolate Lava Cake</h3>
+                    <p>Molten center with vanilla bean ice cream.</p>
+                    <span class="price">$14</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500" alt="Tiramisu">
+                    <h3>Classic Tiramisu</h3>
+                    <p>Espresso-soaked ladyfingers with mascarpone.</p>
+                    <span class="price">$12</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
